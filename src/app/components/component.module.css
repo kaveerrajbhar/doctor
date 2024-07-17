@@ -1,0 +1,54 @@
+.actives{
+  position: relative;
+}
+.actives:before{
+  background: #1dcaff;
+  line-height: 1.8rem;
+  border-radius: 2.5rem;
+  color: white;
+  width: 5.5rem;
+  content: "";
+  display: block;
+  height: 1.8rem;
+  position: absolute;
+  top: 0.35rem;
+  margin-left: 0.35rem;
+  z-index: 1;
+  transition: margin 0.3s ease-in-out;
+  left: 0.1rem;
+}
+.ulli li{
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  transition: color 0.3s ease-in-out;
+  color: white;
+}
+.active1:before{
+  margin-left: 0.35rem;
+}
+.active2:before{
+  margin-left: 5.85rem;
+}
+.active3:before{
+  margin-left: 11.35rem;
+}
+.active4:before{
+  margin-left: 16.85rem;
+}
+.active5:before{
+  margin-left: 22.35rem;
+}
+li.lAct{
+  color: white;
+}
+.logos{
+  height: 64px;
+  left: 44px;
+  top: 13px;
+  position: absolute;
+}
+.logos img{
+  height: 100%;
+
+}

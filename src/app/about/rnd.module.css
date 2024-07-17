@@ -1,0 +1,86 @@
+.herosection {
+  width: 39rem;
+  text-align: center;
+  margin: 0rem auto;
+  padding: 5.5rem 0 0;
+}
+
+.herosection h1 {
+  font-size: 2.6rem;
+  color: #0084b4;
+  font-family: Ubuntu;
+}
+
+.herosection div {
+  font-size: 0.95rem;
+  margin: 0.4rem 0;
+  margin-bottom: 2rem;
+}
+
+.sectionAbout {
+  width: 80%;
+  margin: auto;
+  background: #1dcaff;
+  padding: 1%;
+  border-radius: 1rem;
+  margin-bottom: 1%;
+  color: white;
+}
+
+.sectionAbout:nth-child(2n) {
+  transform: translateX(1%);
+  background: #1dcaff;
+}
+
+.sectionAbout:nth-child(2n+1) {
+  transform: translateX(1%);
+  text-align: right;
+}
+
+.sectionAbout header {
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 20px;
+  text-align: center;
+  padding: 20px;
+  background-color: #f0f0f0;
+  margin-top: 20px; /* Added */
+  
+}
+
+@media screen and (max-width: 768px) {
+  .tagline {
+    font-size: 16px;
+    padding: 10px;
+   
+  }
+  
+  .sectionAbout header {
+    font-size: 20px;
+  }
+  
+  .sectionBody {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .tagline {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .sectionAbout {
+    margin-top: 30px;
+  }
+  
+  .sectionAbout header {
+    font-size: 18px;
+  }
+  
+  .sectionBody {
+    font-size: 12px;
+  }
+}

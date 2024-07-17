@@ -1,95 +1,46 @@
 import Image from 'next/image'
 import styles from './page.module.css'
+import NavBar from './components/navBar';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.tsx</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      <div className={styles.herosection}>
+        <h1>Where Software Meets Magic</h1>
+        <div className={styles.tagline}>
+          Spsolution is a specialized IT solutions provider committed to delivering cutting-edge services exclusively for clients. With a focus on precision, innovation, and efficiency, we strive to elevate the client satisfaction to new heights in the digital landscape.
+        </div>
+        <button className={styles.homebtn}>Get Started</button>
+        <h3>We Believe In</h3>
+      </div>
+
+      <div className={styles.section}>
+        <div className={styles.outerCard}>
+          <div className={styles.innerCard}>
+            <div className={styles.header}>client-Centric Approach</div>
+            <div className={styles.content}>
+            Our firm is dedicated to the success of Client. Every solution we provide is crafted with your business goals in mind, ensuring maximum value and impact.
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.outerCard}>
+          <div className={styles.innerCard}>
+            <div className={styles.header}>Proven Track Record</div>
+            <div className={styles.content}>
+            Backed by a team of skilled professionals, we have a proven track record of delivering high-quality IT solutions that align with Client's firm's objectives.
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.outerCard}>
+          <div className={styles.innerCard}>
+            <div className={styles.header}>Continuous Innovation</div>
+            <div className={styles.content}>
+            In the ever-evolving IT landscape, we stay ahead of the curve by embracing the latest technologies and methodologies. This ensures that Client's satisfaction remains at the forefront of innovation.</div>
+          </div>
         </div>
       </div>
-
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   )
 }

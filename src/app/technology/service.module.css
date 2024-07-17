@@ -1,0 +1,95 @@
+.herosection{
+  width: 39rem;
+  text-align: center;
+  margin: 0rem auto;
+  padding: 5.5rem 0 0;
+}
+.herosection h1{
+  font-size: 2.6rem;
+  color: #0084b4;
+  font-family: Ubuntu;
+}
+.herosection div{
+  font-size: 0.95rem;
+  margin: 0.4rem 0;
+}
+.sectionbox{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.serveBox{
+	flex: 1;
+	border-radius: 1rem;
+	color: white;
+	background: #00aced;
+	margin: 3%;
+	padding: 1%;
+	height: 40vh;
+}
+.serveBox:nth-child(2n){
+	background:#1dcaff;
+}
+ @media only screen and (max-width: 600px) {
+
+.break{
+	flex-basis: 100%;
+  height: 0;
+}
+}
+.serveBox .title{
+ font-size: 1.2rem;
+  border-bottom: 1px solid;
+}
+.serveBox .ulli li{
+	list-style: none;
+	margin: 0.8rem 0;
+}
+
+
+.tagline {
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	background-color: #f0f0f0;
+	margin-top: 20px; /* Added */
+	
+  }
+  
+  @media screen and (max-width: 768px) {
+	.tagline {
+	  font-size: 16px;
+	  padding: 10px;
+	 
+	}
+	
+	.sectionAbout header {
+	  font-size: 20px;
+	}
+	
+	.sectionBody {
+	  font-size: 14px;
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	.tagline {
+	  font-size: 14px;
+	  margin-top: 10px;
+	}
+	
+	.sectionAbout {
+	  margin-top: 30px;
+	}
+	
+	.sectionAbout header {
+	  font-size: 18px;
+	}
+	
+	.sectionBody {
+	  font-size: 12px;
+	}
+  }
+  
+  

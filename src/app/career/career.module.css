@@ -1,0 +1,220 @@
+.herosection {
+	width: 39rem;
+	text-align: center;
+	margin: 0 auto;
+	padding: 5.5rem 0 0;
+  }
+  
+  .herosection h1 {
+	font-size: 2.6rem;
+	color: #0084b4;
+	font-family: Ubuntu;
+  }
+  
+  .herosection div {
+	font-size: 0.95rem;
+	margin: 0.4rem 0;
+	margin-bottom: 2rem;
+  }
+  
+  .circleTop {
+	width: 80%;
+	margin: auto;
+	text-align: center;
+  }
+  
+  .circleInner {
+	width: 50vh;
+	height: 50vh;
+	border-radius: 50%;
+	background: linear-gradient(#0084b4, #00aced);
+	display: inline-block;
+	line-height: 50vh;
+	vertical-align: middle;
+	position: relative;
+  }
+  
+  .circleInner:after {
+	content: "";
+	width: 70%;
+	height: 70%;
+	transform: translateY(-50%) translateX(-50%);
+	background: white;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	border-radius: 50%;
+  }
+  
+  .circleTop {
+	position: relative;
+  }
+  
+  .circleInner img {
+	width: 45%;
+	height: 45%;
+	line-height: 50vh;
+	vertical-align: middle;
+	position: relative;
+	z-index: 3;
+  }
+  
+  .circleTop li {
+	list-style: none;
+	align-items: center;
+	flex: 1;
+	vertical-align: middle;
+	display: flex;
+	position: relative;
+	width: 80%;
+  }
+  
+  .circleTop li div {
+	cursor: pointer;
+  }
+  
+  .circleTop li:after {
+	color: #00aced;
+	content: "";
+	width: 100%;
+	top: 50%;
+	position: absolute;
+	border-bottom: 2px dotted;
+	transform: translateY(14px);
+  }
+  
+  .leftCirc {
+	width: 50%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: left;
+  }
+  
+  .rightCirc {
+	width: 50%;
+	position: absolute;
+	right: 0;
+	top: 0;
+	height: 100%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	text-align: right;
+  }
+  
+  .rightCirc li {
+	justify-content: end;
+  }
+  
+  .modalRes {
+	position: absolute;
+	width: 50vw;
+	height: 205px;
+	background: white;
+	border-radius: 1rem;
+	top: 50%;
+	left: 50%;
+	z-index: 10;
+	transform: translateX(-50%) translateY(-50%);
+	box-shadow: 0 0 1px 5px;
+	padding: 2%;
+	display: none;
+  }
+  
+  .modalRes button {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	background: transparent;
+	border: 0px;
+	width: 28px;
+	height: 28px;
+	cursor: pointer;
+	color: #4682a2;
+	font-size: 18px;
+  }
+  
+  .modalRes p {
+	margin: 0;
+	text-align: left;
+  }
+  
+  .fileWrap {
+	padding: 4%;
+	margin-top: 3%;
+	border: 1px dashed #ccc;
+  }
+  
+  /* Button Styles */
+  .leftCirc button,
+  .rightCirc button {
+	padding: 10px 20px;
+	background-color: #00aced;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-bottom: 10px;
+  }
+  
+  .leftCirc button:hover,
+  .rightCirc button:hover {
+	background-color: #1dcaff;
+  }
+  
+  /* Tagline Style */
+  .tagline {
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	background-color: #f0f0f0;
+	margin-top: 20px;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+	.tagline {
+	  font-size: 16px;
+	  padding: 10px;
+	}
+  
+	.herosection h1 {
+	  font-size: 2rem;
+	}
+  
+	.sectionAbout header {
+	  font-size: 20px;
+	}
+  
+	.sectionBody {
+	  font-size: 14px;
+	}
+  }
+  
+  @media screen and (max-width: 480px) {
+	.tagline {
+	  font-size: 14px;
+	  margin-top: 10px;
+	}
+  
+	.sectionAbout {
+	  margin-top: 30px;
+	}
+  
+	.sectionAbout header {
+	  font-size: 18px;
+	}
+  
+	.sectionBody {
+	  font-size: 12px;
+	}
+  }
+  
